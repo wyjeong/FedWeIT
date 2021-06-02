@@ -1,6 +1,6 @@
 # Federated Continual Learning with Weighted Inter-client Transfer
 
-This repository is an official Tensorflow 2 implementation of [Federated Continual Learning with Weighted Inter-client Transfer]() (**ICML 2021**)
+This repository is an official Tensorflow 2 implementation of [Federated Continual Learning with Weighted Inter-client Transfer](https://arxiv.org/abs/2003.03196) (**ICML 2021**)
 
 > Currently working on PyTorch version 
 
@@ -47,14 +47,14 @@ To reproduce experiments, please execute `train-non-iid-50.sh` file in the `scri
 
 ```bash
 python3 ../main.py --gpu 0,1,2,3,4 \
-					--work-type train \
-					--model fedweit \
-					--task non_iid_50 \
-					--gpu-mem-multiplier 9 \
-					--num-rounds 20 \
-					--num-epochs 1 \
-					--batch-size 100 \
-					--seed 777 
+		--work-type train \
+		--model fedweit \
+		--task non_iid_50 \
+	 	--gpu-mem-multiplier 9 \
+		--num-rounds 20 \
+		--num-epochs 1 \
+		--batch-size 100 \
+		--seed 777 
 ```
 Please replace arguments as you wish, and for the other options (i.e. hyper-parameters, etc.), please refer to `config.py` file at the project root folder.
 
